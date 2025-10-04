@@ -1,6 +1,6 @@
 # Multi--Tier-Architecture-on-Docker
 # Creating a Blogging Site Using Docker (Manual Setup)
-Environment Setup
+Environment Setup:
 
 Platform: AWS EC2 Instance
 
@@ -20,3 +20,16 @@ WordPress will connect to a MySQL container for data storage and retrieval.
 ## [3]Network Tier (Custom Docker Network)
 
 A custom user-defined Docker network will be created to enable secure and seamless communication between the WordPress and MySQL containers.
+
+# Step: 1 [Install Docker & Start Docker Services]
+## [1]Launch EC2 instance and install docker inside EC2 and start docker Service:
+
+     Docker install command:
+
+    yum install docker -y 
+## [2]Start Docker Service command:
+
+     systemctl enable  docker --now 
+## [3]Check Docker Status:
+
+      systemctl status docker
