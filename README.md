@@ -22,14 +22,15 @@ WordPress will connect to a MySQL container for data storage and retrieval.
 A custom user-defined Docker network will be created to enable secure and seamless communication between the WordPress and MySQL containers.
 
 # Step: 1 [Install Docker & Start Docker Services]
-## [1]Launch EC2 instance and install docker inside EC2 and start docker Service:
+### [1]Launch EC2 instance and install docker inside EC2 and start docker Service:
 
-     Docker install command:
+    Docker install command:
 
     yum install docker -y 
-## [2]Start Docker Service command:
+    systemctl start docker
+### [2]Start Docker Service command:
 
      systemctl enable  docker --now 
-## [3]Check Docker Status:
+### [3]Check Docker Status:
 
       systemctl status docker
