@@ -1,5 +1,5 @@
 # Multi--Tier-Architecture-on-Docker
-#Creating a Blogging Site Using Docker (Manual Setup)
+# Creating a Blogging Site Using Docker (Manual Setup)
 Environment Setup
 
 Platform: AWS EC2 Instance
