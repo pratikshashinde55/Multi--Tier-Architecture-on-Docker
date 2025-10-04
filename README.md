@@ -43,10 +43,4 @@ A custom user-defined Docker network will be created to enable secure and seamle
 
 # Step: 2 [Launch MySQL Container using own Network]
 Create database with own driver (database- container name)
-
-Launch MySQL container using custom networks & adding environmental variables & Attach Host folder(Mount volume) Default folder of MySQL storage is /var/lib/mysql:
-
-docker run -dit --name database --network psnet -v /mydata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=pratik55  -e MYSQL_DATABASE=mydatabase  -e MYSQL_USER=jack  -e MYSQL_PASSWORD=jack11 mysql
-Inspect command for check:(here we see our Subnet range(10.0.0.1/16) to our given database container)
-
-docker inspect database   
+   
